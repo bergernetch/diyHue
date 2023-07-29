@@ -119,6 +119,10 @@ cd diyHue-$branchSelection/BridgeEmulator/
 
 echo -e "\033[36m Installing Python Dependencies.\033[0m"
 
+# create venv
+python3 -m venv /opt/hue-emulator-venv
+source /opt/hue-emulator-venv/bin/activate 
+
 pip3 install -r ../requirements.txt
 
 
